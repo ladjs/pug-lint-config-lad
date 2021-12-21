@@ -32,6 +32,9 @@
   "engines": {
     "node": ">= 12"
   },
+  "files": [
+    "src"
+  ],
   "homepage": "https://github.com/ladjs/pug-lint-config-lad",
   "keywords": [
     "jade",
