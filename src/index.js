@@ -1,4 +1,4 @@
 module.exports = {
   additionalRules: ['rules/*.js'],
-  validateDivTags: true
+  'lad/validateDivTags': true
 };

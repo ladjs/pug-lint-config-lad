@@ -20,7 +20,7 @@ const utils = require('../utils');
 module.exports = function () {};
 
 module.exports.prototype = {
-  name: 'validateDivTags',
+  name: 'lad/validateDivTags',
 
   schema: {
     enum: [null, true]
