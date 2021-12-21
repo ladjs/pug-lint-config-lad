@@ -10,7 +10,9 @@
   "contributors": [
     "Taylor Schley <taylorschley@me.com> (https://github.com/shadowgate15)"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "assert": "^2.0.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
@@ -28,7 +30,7 @@
     "xo": "latest"
   },
   "engines": {
-    "node": ">= 10"
+    "node": ">= 12"
   },
   "homepage": "https://github.com/ladjs/pug-lint-config-lad",
   "keywords": [
@@ -42,7 +44,7 @@
     "puglint"
   ],
   "license": "MIT",
-  "main": "index.js",
+  "main": "src/index.js",
   "publishConfig": {
     "access": "public"
   },
@@ -55,6 +57,7 @@
     "lint": "yarn run lint:js && yarn run lint:md",
     "lint:js": "xo",
     "lint:md": "remark . -qfo",
+    "prepare": "husky install",
     "pretest": "yarn run lint",
     "test": "cross-env NODE_ENV=test ava",
     "test-coverage": "cross-env NODE_ENV=test nyc yarn run test"

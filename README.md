@@ -1,6 +1,6 @@
 # @ladjs/pug-lint-config-lad
 
-[![build status](https://img.shields.io/travis/com/ladjs/pug-lint-config-lad.svg)](https://travis-ci.com/ladjs/pug-lint-config-lad)
+[![build status]()]()
 [![code coverage](https://img.shields.io/codecov/c/github/ladjs/pug-lint-config-lad.svg)](https://codecov.io/gh/ladjs/pug-lint-config-lad)
 [![code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
@@ -37,12 +37,11 @@ yarn add @ladjs/pug-lint-config-lad
 ## Usage
 
 ```js
-const @ladjs/pugLintConfigLad = require('@ladjs/pug-lint-config-lad');
-
-const @ladjs/pugLintConfigLad = new @ladjs/pugLintConfigLad();
-
-console.log(@ladjs/pugLintConfigLad.renderName());
-// script
+// inside .pug-lintrc.js
+module.exports = {
+  extends: '@ladjs/pug-lint-config-lad',
+  // your configs
+};
 ```
 
 
